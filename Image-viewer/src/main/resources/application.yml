@@ -1,0 +1,17 @@
+server:
+  port: 9091
+spring:
+  datasource:
+    url: jdbc:mysql://172.31.144.1:32196/inventory?allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl.auto: update
+minio:
+  url: http://172.31.144.1:32736
+  username: ecm
+  password: ecm123#@!
+  bucket.name: inventory
+  file.path: imageFile/data.jpg
